@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section id="1">
+            <article>
+                <div>
+                    <button>Origem</button>
+                </div>
+            </article>
+        </section id="3">
+        <section>
+
+        </section>
+        <section id="3">
+
+        </section>
+    </main>
+    <script>
+        let botao = document.querySelector("button")
+        let div = botao.parentElement;
+        let article = div.parentElement;
+        let sectionOrigem = article.parentElement;
+        let sectionDestino = sectionOrigem.nextElementSibling.nextElementSibling;
+
+        console.log(sectionDestino);
+
+    </script>
+</body>
+</html>
